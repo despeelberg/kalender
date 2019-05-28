@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="https://www.despeelberg.be/img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <title>De Speelberg Kalender</title>
+<link href="/kalender/./css/main.css" rel="stylesheet"></head>
+<body>
+
+    <div class="banner">
+        <button class="menu-btn js-menu"><i class="fas fa-bars"></i></button>
+        <div class="logo">
+            <img src="https://www.despeelberg.be/img/logo.png" alt="" class="logo__img">
+            <h1 class="logo__name">De Speelberg</h1>
+        </div>
+        <div class="actions">
+            <button class="action action--not" data-dir="today">Vandaag</button>
+            <button class="action" data-dir="left"><i class="fas fa-angle-left"></i></button>
+            <button class="action" data-dir="right"><i class="fas fa-angle-right"></i></button>
+            <p class="action__result js-result"></p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="side-bar">
+            <ul class="side-bar__nav">
+                <li class="nav__item nav__item--top"><i class="fas fa-calendar-day"></i> &nbsp;Kalender</li>
+                <li class="nav__item"><a href="#" class="check check--blue" data-value="sd"><i class="far fa-square"></i> &nbsp;Speelpleindagen</a></li>
+                <li class="nav__item"><a href="#" class="check check--red" data-value="act"><i class="far fa-square"></i> &nbsp;Activiteiten</a></li>
+                <li class="nav__item"><a href="#" class="check check--green" data-value="ev"><i class="far fa-square"></i> &nbsp;Evenementen</a></li>
+            </ul>
+        </div>
+
+        <div class="calendar">
+            <div class="days">
+                <div class="days__day">
+                    <p class="day__text">Ma</p>
+                </div>
+                <div class="days__day">
+                    <p class="day__text">Di</p>
+                </div>
+                <div class="days__day">
+                    <p class="day__text">Wo</p>
+                </div>
+                <div class="days__day">
+                    <p class="day__text">Do</p>
+                </div>
+                <div class="days__day">
+                    <p class="day__text">Vr</p>
+                </div>
+                <div class="days__day">
+                    <p class="day__text">Za</p>
+                </div>
+                <div class="days__day">
+                    <p class="day__text">Zo</p>
+                </div>
+            </div>
+            <div class="calendar__view"></div>
+        </div>
+    </div>
+<script type="text/javascript" src="/kalender/js/bundle.js"></script></body>
+</html>

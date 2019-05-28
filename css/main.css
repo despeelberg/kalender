@@ -1,0 +1,225 @@
+/* 
+    Blue: 1a6ac1 (26, 106, 193)
+    Yellow: fed74c (254, 215, 76)
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  overflow: hidden; }
+
+html, body {
+  height: 100%; }
+
+/* BANNER */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0 1px 8px #909090; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2; }
+
+.logo__img {
+  width: 45px;
+  margin: 10px; }
+
+.logo__name {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  color: #606060; }
+
+.menu-btn {
+  margin: 15px;
+  font-size: 24px;
+  color: #909090;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  transition: 0.1s linear;
+  border-radius: 50px;
+  border: none;
+  background: transparent;
+  outline: none; }
+
+.menu-btn:hover {
+  box-shadow: 0 0 8px #1a6ac1; }
+
+.menu-btn:active {
+  transform: scale(1.2); }
+
+.actions {
+  padding-right: 15px;
+  display: flex; }
+
+.action__result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  color: #909090;
+  font-size: 18px; }
+
+.action {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #909090;
+  padding: 10px;
+  border-radius: 50px;
+  transition: 0.1s linear;
+  width: 45px;
+  height: 45px;
+  outline: none;
+  display: block;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif; }
+
+.action--not {
+  width: auto; }
+
+.action:hover {
+  box-shadow: 0 0 8px #1a6ac1; }
+
+.action:active {
+  transform: scale(1.2); }
+
+/* MAIN */
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex; }
+
+/* SIDE-BAR */
+.side-bar {
+  width: 350px;
+  border-right: 1px solid #909090;
+  transition: 0.1s ease-in; }
+
+.side-bar--closed {
+  margin-left: -350px; }
+
+.side-bar__nav {
+  list-style: none; }
+
+.nav__item {
+  display: block;
+  padding: 15px;
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  font-size: 18px; }
+
+.nav__item--top {
+  font-size: 24px;
+  padding: 25px 15px;
+  border-bottom: 1px solid #909090;
+  color: #505050; }
+
+.check {
+  text-decoration: none;
+  color: #303030; }
+
+.check--red {
+  color: #cf2522; }
+
+.check--blue {
+  color: #1a6ac1; }
+
+.check--green {
+  color: #75cb65; }
+
+/* CALENDAR */
+.calendar {
+  height: 100%;
+  width: 100%;
+  transition: 0.1s ease-in; }
+
+.calendar__view {
+  height: 95%; }
+
+.week {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; }
+
+.days {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.days__day {
+  flex: 1;
+  text-align: center;
+  border-bottom: 1px solid #909090;
+  border-right: 1px solid #909090;
+  padding: 10px;
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.days__day:last-child {
+  border-right: none; }
+
+.day__text {
+  color: #303030;
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif; }
+
+.day {
+  flex: 1;
+  height: 100%;
+  background: #dedede;
+  border-bottom: 1px solid #909090;
+  transition: 0.1s linear;
+  background: rgba(26, 106, 193, 0.3);
+  background: #fefefe;
+  border-right: 1px solid #909090;
+  display: block; }
+
+.day:last-child {
+  border-right: none; }
+
+.day--current {
+  box-shadow: 0 0 8px 2px #1a6ac1;
+  position: relative;
+  z-index: 10; }
+
+.day--current:hover {
+  box-shadow: 0 0 8px 2px #1a6ac1 !important;
+  background: #fefefe !important; }
+
+.day:hover {
+  box-shadow: 0 0 8px 2px #fed74c;
+  position: relative;
+  z-index: 20;
+  transform: scale(1.05);
+  background: #fefefe !important; }
+
+.day__date {
+  padding: 5px;
+  text-align: right; }
+
+.day__number {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  color: #909090; }
+
+.day__entry {
+  padding: 5px;
+  margin: 5px 0; }
+
+.entry {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  color: #fefefe; }
+
+.day__entry--act {
+  background: #cf2522; }
+
+.day__entry--ev {
+  background: #75cb65; }
+
+.day__entry--sd {
+  background: #1a6ac1; }
+
