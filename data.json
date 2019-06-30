@@ -6,6 +6,10 @@
                 {
                     "name": "Speelplein",
                     "type": "sd"
+                },
+                {
+                    "name": "Katapulten",
+                    "type": "act"
                 }
             ]
         },
@@ -51,6 +55,10 @@
                 {
                     "name": "Speelplein",
                     "type": "sd"
+                },
+                {
+                    "name": "Filmtrucjes",
+                    "type": "act"
                 }
             ]
         },
@@ -100,6 +108,10 @@
                 {
                     "name": "Speelplein",
                     "type": "sd"
+                },
+                {
+                    "name": "Sumopakken",
+                    "type": "act"
                 }
             ]
         },
@@ -109,6 +121,10 @@
                 {
                     "name": "Speelplein",
                     "type": "sd"
+                },
+                {
+                    "name": "Walibi",
+                    "type": "act"
                 }
             ]
         },
